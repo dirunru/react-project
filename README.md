@@ -10,6 +10,8 @@
 4.npm install antd --save ui框架
 5.npm install react-router-dom --save-dev 路由的安装
 6.npm run eject 暴露webpack
+7.npm install babel-jest@24.7.1 家庭版解决一个bug
+
 
 
 #项目介绍
