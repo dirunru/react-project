@@ -1,5 +1,7 @@
 ##初始化项目
 全局安装 cnpm install -g create-react-app
+更新npm npm install -g npm
+更新淘宝镜像 npm install -g cnpm
 
 ##新项目
 1.create-react-app 项目名称
