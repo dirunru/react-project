@@ -6,3 +6,6 @@
 2.cd 项目名称
 3.npm start 开始项目
 
+#项目介绍
+src index
+
