@@ -3,6 +3,7 @@
 //引入入第三方模块不许要加点
 import React from 'react';
 import ReactDOM from 'react-dom';  //渲染必须要引入react-dom
+import "antd/dist/antd.css" //引入第三方ui组件的ui
 
 
 //引入自定义的模块需要加点
