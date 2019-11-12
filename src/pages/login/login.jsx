@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Form, Icon, Input, Button,Checkbox } from "antd";
 import styles from "./login.module.less";
-console.log('styles: ', styles);
 const Item = Form.Item; //不能写在import的上面
 
 /* 
@@ -14,7 +13,10 @@ class Login extends Component {
     // this.get
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log("Received values of form: ", values);
+        // console.log("Received values of form: ", values);//获取的是校验完成之后的表单的值
+        // this.getFieldsValue = this.props.form.getFieldsValue;//获得表单所有控件的值
+        // this.props.form.getFieldsValue（“username”）//获得指定控件的值
+        this.props.history.push("/");//react的页面跳转
       }
     });
   };
@@ -39,7 +41,7 @@ class Login extends Component {
                     <Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />
                   }
                   placeholder="Username"
-                  autoComplete="current-password"
+                  autoComplete="current-username"
                 />
               )}
             </Item>
@@ -70,7 +72,7 @@ class Login extends Component {
               <Button
                 type="primary"
                 htmlType="submit"
-                className="login-form-button">
+                style={{width:"100%"}}>
                 Log in
               </Button>
             </Item>
