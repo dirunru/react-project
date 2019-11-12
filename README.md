@@ -17,5 +17,8 @@
     安装这个工具后，在项目根目录中新建文件config-overrides.js文件。就可以修改webpack的修改,还需要修改packjson.js
 5、npm install less less-loader --save 
 6、npm install react-router-dom --save react的路由配置
+7.npm run eject 暴露webpack 只存在webpack.config.js
+7.npm i react-css-modules --save 安装css-module
+8.npm install node-sass --save 安装sass
 
 

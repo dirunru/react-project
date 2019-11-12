@@ -10,7 +10,7 @@ module.exports = override(
         libraryDirectory: 'es',
         style: 'css', //自动打包相关样式
     }),
-    // 修改主题:使用less-loader对源码中的less变量的源码进行修改
+    // 修改主题:使用less-loxader对源码中的less变量的源码进行修改
     addLessLoader({
         javascriptEnabled: true,
         modifyVars: {
