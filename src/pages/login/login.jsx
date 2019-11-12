@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Form, Icon, Input, Button,Checkbox } from "antd";
-import "./login.less";
+import styles from "./login.module.less";
+console.log('styles: ', styles);
 const Item = Form.Item; //不能写在import的上面
 
 /* 
@@ -20,11 +21,11 @@ class Login extends Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <div className="login">
-        <header className="login-header">
+      <div className={styles.login}>
+        <header className={styles.login_header}>
           <h1>react项目学习</h1>
         </header>
-        <section className="login-content">
+        <section className={styles.login_content}>
           <h2>登陆</h2>
           <Form onSubmit={this.handleSubmit} className="login-form">
             <Item>

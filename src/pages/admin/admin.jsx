@@ -6,7 +6,7 @@ import React, { Component } from 'react'
 class Admin extends Component {
  render(){
    return (
-      <div> <h1> 好 </h1></div>
+      <div class="login"></div>
    )
  }
 }
